@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Doçuras Enlaces | Galeria</title>
+    <link rel="icon" type="image/png" href="img/icone-pagina.png" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="galeria-page">
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+              <!--<a class="text-white pr-3" href="">FAQs</a>
+              <span class="text-white">|</span>
+              <a class="text-white px-3" href="">Help</a>
+              <span class="text-white">|</span>
+              <a class="text-white pl-3" href="">Support</a> -->
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+              <a class="text-white px-3" href="https://wa.me/5519994387342">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                class="text-white px-3"
+                href="https://www.instagram.com/docuras_enlaces"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                class="text-white px-3"
+                href="https://www.facebook.com/profile.php?id=61573275514427"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+      <div
+        class="container-lg position-relative p-0 px-lg-3"
+        style="z-index: 9"
+      >
+        <nav
+          class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0"
+        >
+          <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <img
+              src="img/logo-docuras.png"
+              class="logo-mobile"
+              alt="Logo da Loja"
+            />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <i class="fa fa-bars text-primary"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav ml-auto py-0">
+              <a href="index.html" class="nav-item nav-link">Início</a>
+              <a
+                href="index.html#sobre"
+                onclick="location.href = 'index.html#sobre'"
+                class="nav-item nav-link"
+                >Sobre</a
+              >
+              <a
+                href="index.html#cardapio"
+                onclick="location.href = 'index.html#cardapio'"
+                class="nav-item nav-link"
+                >Cardápio</a
+              >
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+              <img src="img/logo-docuras.png" class="logo" alt="Logo da Loja" />
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+              <a
+                href="index.html#servicos"
+                onclick="location.href = 'index.html#servicos'"
+                class="nav-item nav-link"
+                >Serviços</a
+              >
+              <a href="galeria.html" class="nav-item nav-link active"
+                >Galeria</a
+              >
+              <a href="contato.html" class="nav-item nav-link">Contato</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- GALERIA -->
+    <div class="container-fluid py-5 px-0">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <h1 class="section-title position-relative text-center mb-5">
+              Galeria de Fotos
+            </h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <ul class="list-inline mb-4 pb-2" id="portfolio-flters">
+              <li
+                class="btn btn-sm btn-outline-primary m-1 active"
+                data-filter="*"
+              >
+                Tudo
+              </li>
+              <li
+                class="btn btn-sm btn-outline-primary m-1"
+                data-filter=".casamento"
+              >
+                Casamento
+              </li>
+              <li
+                class="btn btn-sm btn-outline-primary m-1"
+                data-filter=".pascoa"
+              >
+                Páscoa
+              </li>
+              <li
+                class="btn btn-sm btn-outline-primary m-1"
+                data-filter=".bolo"
+              >
+                Bolo
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GALERIA DINÂMICA -->
+        <div class="row m-0 portfolio-container" id="galeria"></div>
+      </div>
+    </div>
+    <!-- FIM GALERIA -->
+
+    <div class="chocolate-divider footer-onda">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113,2.99,1200,34.75V0Z"
+          style="fill: #ffffff"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px">
+      <div class="container text-center py-5">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <a href="index.html" class="navbar-brand m-0">
+              <h1 class="m-0 mt-n2 display-4 text-primary">
+                <img
+                  src="img/logo-docuras.png"
+                  class="logo"
+                  alt="Logo da Loja"
+                />
+              </h1>
+            </a>
+          </div>
+          <div class="col-12 mb-4">
+            <a
+              class="btn btn-outline-secondary btn-social mr-2"
+              href="https://wa.me/5519994387342"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              class="btn btn-outline-secondary btn-social mr-2"
+              href="https://www.facebook.com/profile.php?id=61573275514427"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              class="btn btn-outline-secondary btn-social"
+              href="https://www.instagram.com/docuras_enlaces"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <div class="col-12 mt-2 mb-4">
+            <div class="row">
+              <div
+                class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0"
+              >
+                <h5 class="font-weight-bold mb-2">Endereço</h5>
+                <p class="mb-2">Rua João Ribeiro Evangelista, 311</p>
+                <p class="mb-2">- Jardim Nova Hortolândia</p>
+                <p class="mb-0">+55 (19) 99438-7342</p>
+              </div>
+              <div class="col-sm-6 text-center text-sm-left">
+                <h5 class="font-weight-bold mb-2">Funcionamento</h5>
+                <p class="mb-2">Seg - Sáb, 11:00 - 19:00</p>
+                <p class="mb-0">Domingo: Fechado</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="m-0">
+              © 2026 Doçuras Enlaces. Todos os direitos reservados.
+            </p>
+            <p class="m-0">
+              Template por <a href="https://htmlcodex.com">HTML Codex</a> |
+              Desenvolvido por Julia Franco
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="galeria.js"></script>
+  </body>
+</html>
