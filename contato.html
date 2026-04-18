@@ -134,107 +134,98 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div
-      class="jumbotron jumbotron-fluid page-header"
-      style="margin-bottom: 40px"
-    >
-      <div class="container text-center py-5">
-        <h1 class="text-white display-3 mt-lg-5">Contato</h1>
-      </div>
-    </div>
-    <!-- Header End -->
-
-    <!-- Contact Form -->
     <div class="container-fluid py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="row mb-4">
-              <div class="col-sm-6 mb-4 d-flex">
-                <div class="contact-card w-100">
-                  <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                  <h6>Endereço</h6>
-                  <p>Rua João R. Evangelista, 311 - Jd. Nova Hortolândia</p>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4 d-flex">
-                <div class="contact-card w-100">
-                  <i class="fab fa-whatsapp"></i>
-                  <h6>Whatsapp</h6>
-                  <p>(19) 99438-7342</p>
-                </div>
-              </div>
-            </div>
-            <div class="map-wrapper shadow-sm">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.5922068786954!2d-47.211246!3d-22.854572000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bea892f8be4b%3A0x60f19fd626898c9b!2sR.%20Jo%C3%A3o%20Ribeiro%20Evangelista%20-%20Jardim%20Nova%20Hortolandia%20II%2C%20Hortol%C3%A2ndia%20-%20SP%2C%2013183-611!5e0!3m2!1spt-BR!2sbr!4v1775772231371!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              >
-              </iframe>
-            </div>
-          </div>
+        <div class="contact-container row g-0">
+          <div class="col-lg-7 contact-info-side">
+            <h1
+              class="section-title position-relative mb-4"
+              style="color: #5c3d2e"
+            >
+              Fale Conosco
+            </h1>
+            <p class="mb-5">
+              Tem alguma dúvida ou deseja fazer um pedido especial? Mande uma
+              mensagem para a gente!
+            </p>
 
-          <div class="col-lg-6 px-lg-5">
-            <div class="contact-title-box">
-              <h1 class="section-title position-relative mb-5">Contato</h1>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="contact-card-v2">
+                  <i class="fa fa-map-marker-alt"></i>
+                  <div>
+                    <h6>Endereço</h6>
+                    <p>Rua João R. Evangelista, 311</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contact-card-v2">
+                  <i class="fab fa-whatsapp"></i>
+                  <div>
+                    <h6>WhatsApp</h6>
+                    <p>(19) 99438-7342</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="contact-form bg-light p-4 shadow-sm">
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                <div class="control-group mb-3">
+
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
                   <input
                     type="text"
                     name="from_name"
-                    class="form-control p-4"
-                    id="name"
+                    class="form-control form-rounded p-4"
                     placeholder="Seu Nome"
-                    required="required"
-                  />
-                </div>
-                <div class="control-group mb-3">
-                  <input
-                    type="email"
-                    name="reply_to"
-                    class="form-control p-4"
-                    id="email"
-                    placeholder="Seu E-mail"
-                    required="required"
-                  />
-                </div>
-                <div class="form-group mb-3">
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control p-4"
-                    placeholder="Assunto"
                     required
                   />
                 </div>
-                <div class="control-group mb-3">
-                  <textarea
-                    name="message"
-                    class="form-control p-4"
-                    rows="5"
-                    id="message"
-                    placeholder="Escreva sua mensagem..."
-                    required="required"
-                  ></textarea>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="email"
+                    name="reply_to"
+                    class="form-control form-rounded p-4"
+                    placeholder="Seu E-mail"
+                    required
+                  />
                 </div>
-                <div>
-                  <button
-                    class="btn btn-primary btn-block py-3"
-                    type="submit"
-                    id="sendMessageButton"
-                  >
-                    Enviar Mensagem
-                  </button>
-                </div>
-              </form>
-            </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control form-rounded p-4"
+                  placeholder="Assunto"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <textarea
+                  name="message"
+                  class="form-control form-rounded p-4"
+                  rows="4"
+                  placeholder="Como podemos te ajudar?"
+                  required
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-primary btn-block py-3 font-weight-bold"
+                style="border-radius: 12px"
+                type="submit"
+              >
+                ENVIAR MENSAGEM
+              </button>
+            </form>
+          </div>
+
+          <div class="col-lg-5 contact-map-side">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.214488390757!2d-47.2346766!3d-22.831557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b935140f7d85%3A0x6b486241a7d03610!2sR.%20Jo%C3%A3o%20Ribeiro%20Evangelista%2C%20311%20-%20Jardim%20Nova%20Hortolandia%2C%20Hortol%C3%A2ndia%20-%20SP%2C%2013183-420!5e0!3m2!1spt-BR!2sbr!4v1710000000000"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
           </div>
         </div>
       </div>
@@ -245,19 +236,23 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
+
     <script type="text/javascript">
       (function () {
+        // Sua chave pública (Não mude isso)
         emailjs.init("a7VoPu5ut43-bggNo");
       })();
 
       const form = document.getElementById("contactForm");
+
       form.addEventListener("submit", function (event) {
         event.preventDefault();
 
+        // "this" envia todos os campos (from_name, reply_to, subject, message) de uma vez
         emailjs.sendForm("service_evswxaz", "template_wobo33j", this).then(
           function () {
             alert("Mensagem enviada com sucesso! 😃");
-            form.reset();
+            form.reset(); // Limpa o formulário após o envio
           },
           function (error) {
             console.error("Erro ao enviar a mensagem:", error);
@@ -343,6 +338,14 @@
       </div>
     </div>
     <!-- Footer End -->
+
+    <a
+      href="https://wa.me/5519994387342"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary px-2 back-to-top"
