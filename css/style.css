@@ -423,7 +423,7 @@ svg {
   shape-rendering: geometricPrecision;
 }
 
-.chocolate-divider.meio-onda {
+.chocolate-divider.segunda-onda {
   width: 100%;
   overflow: hidden;
   line-height: 0;
@@ -434,7 +434,7 @@ svg {
   background-color: #ffddf2;
 }
 
-.chocolate-divider.meio-onda svg {
+.chocolate-divider.segunda-onda svg {
   position: relative;
   display: block;
   width: calc(110% + 1.3px);
@@ -442,11 +442,39 @@ svg {
   left: -5%;
 }
 
-.chocolate-divider.meio-onda svg path {
+.chocolate-divider.segunda-onda svg path {
   fill: #f9f7f7 !important;
 }
 
-.chocolate-divider.final-onda {
+
+
+
+.chocolate-divider.terceira-onda {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -3px;
+  margin-bottom: -3px;
+  position: relative;
+  z-index: 10;
+  background-color: #ffe7f9;
+}
+
+.chocolate-divider.terceira-onda svg {
+  position: relative;
+  display: block;
+  width: calc(110% + 1.3px);
+  height: 80px;
+  left: -5%;
+}
+
+.chocolate-divider.terceira-onda svg path {
+  fill: #ffddf2 !important;
+}
+
+
+
+.chocolate-divider.quarta-onda {
   width: 100%;
   overflow: hidden;
   line-height: 0;
@@ -457,7 +485,7 @@ svg {
   background-color: #f9f7f7;
 }
 
-.chocolate-divider.final-onda svg {
+.chocolate-divider.quarta-onda svg {
   position: relative;
   display: block;
   width: calc(110% + 1.3px);
@@ -465,9 +493,10 @@ svg {
   left: -5%;
 }
 
-.chocolate-divider.final-onda svg path {
-  fill: #ffddf2 !important;
+.chocolate-divider.quarta-onda svg path {
+  fill: #ffe7f9 !important;
 }
+
 
 .chocolate-divider.footer-onda {
   width: 100%;

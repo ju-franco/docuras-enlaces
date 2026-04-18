@@ -1,4 +1,6 @@
 const imagens = [
+
+    // CATEGORIA CASAMENTO
     { src: "img/galeria/casamento1.jpg", categoria: "casamento" },
     { src: "img/galeria/casamento2.jpg", categoria: "casamento" },
     { src: "img/galeria/casamento3.jpg", categoria: "casamento" },
@@ -7,18 +9,28 @@ const imagens = [
     { src: "img/galeria/casamento6.jpg", categoria: "casamento" },
     { src: "img/galeria/casamento7.jpg", categoria: "casamento" },
 
+
+    // CATEGORIA PÁSCOA
     { src: "img/galeria/pascoa1.jpg", categoria: "pascoa" },
     { src: "img/galeria/pascoa2.jpg", categoria: "pascoa" },
     { src: "img/galeria/pascoa3.jpg", categoria: "pascoa" },
     { src: "img/galeria/pascoa4.jpg", categoria: "pascoa" },
     { src: "img/galeria/pascoa5.jpg", categoria: "pascoa" },
 
+
+    // CATEGORIA BOLOS
     { src: "img/galeria/bolo1.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo2.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo3.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo4.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo5.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo6.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo7.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo8.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo9.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo10.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo11.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo12.jpg", categoria: "bolo" },
 ];
 
 // 1. Renderiza as imagens imediatamente
