@@ -33,5 +33,15 @@ const cardapio = [
         nome: "Tortinha",
         foto: "img/cardapio/tortinha.png",
         sabores: "Morango, Limão"
+    },
+    {
+        nome: "Bolo no Pote",
+        foto: "img/cardapio/bolo-no-pote.png",
+        sabores: ""
+    },
+    {
+        nome: "Cookie",
+        foto: "img/cardapio/cookie.png",
+        sabores: ""
     }
 ];

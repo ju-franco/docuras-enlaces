@@ -38,7 +38,6 @@
     monospace;
 }
 
-
 /* --- Barra de Rolagem Personalizada --- */
 
 /* 1. Largura da barra */
@@ -54,7 +53,7 @@
 /* 3. A parte que desliza (Botão) */
 ::-webkit-scrollbar-thumb {
   background-color: #ff91d5; /* Rosa principal do site */
-  border-radius: 20px;       /* Deixa as pontas arredondadas */
+  border-radius: 20px; /* Deixa as pontas arredondadas */
   border: 3px solid #fcf8f6; /* Cria um "espaço" entre a barra e a borda */
 }
 
@@ -69,14 +68,12 @@
   scrollbar-color: #ff91d5 #fcf8f6;
 }
 
-
- 
 #sobre h4 {
-    color: #5c3d2e !important;
+  color: #5c3d2e !important;
 }
 
 #sobre .fa-check {
-    color: #5c3d2e !important;
+  color: #5c3d2e !important;
 }
 
 *,
@@ -155,7 +152,7 @@ section {
 }
 
 .product-card:hover .product-img-container img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .product-price-badge {
@@ -193,7 +190,7 @@ section {
 }
 
 .btn-primary.rounded-pill:hover {
-  background-color: #5c3d2e; 
+  background-color: #5c3d2e;
   border-color: #5c3d2e;
 }
 
@@ -358,7 +355,7 @@ section {
 #lista-produtos {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .product-card {
@@ -369,12 +366,12 @@ section {
   border: none;
   overflow: hidden;
   min-height: 400px;
-  height: fit-content; 
+  height: fit-content;
 }
 
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(255, 145, 213, 0.3); 
+  box-shadow: 0 10px 25px rgba(255, 145, 213, 0.3);
 }
 
 /* Imagem do Doce */
@@ -387,7 +384,7 @@ section {
 .product-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 /* Selo de Preço */
@@ -419,7 +416,7 @@ section {
 .product-content {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .product-content .btn {
@@ -432,11 +429,11 @@ section {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  margin-top: -3px; 
-  margin-bottom: -3px; 
+  margin-top: -3px;
+  margin-bottom: -3px;
   position: relative;
   z-index: 10;
-  background-color: #f9f7f7; 
+  background-color: #f9f7f7;
 }
 
 .chocolate-divider.inicio-onda svg {
@@ -448,7 +445,7 @@ section {
 }
 
 .chocolate-divider.inicio-onda svg path {
-  fill: #ff91d5 !important; 
+  fill: #ff91d5 !important;
 }
 
 svg {
@@ -478,9 +475,6 @@ svg {
   fill: #f9f7f7 !important;
 }
 
-
-
-
 .chocolate-divider.terceira-onda {
   width: 100%;
   overflow: hidden;
@@ -504,8 +498,6 @@ svg {
   fill: #ffddf2 !important;
 }
 
-
-
 .chocolate-divider.quarta-onda {
   width: 100%;
   overflow: hidden;
@@ -528,7 +520,6 @@ svg {
 .chocolate-divider.quarta-onda svg path {
   fill: #ffe7f9 !important;
 }
-
 
 .chocolate-divider.footer-onda {
   width: 100%;
@@ -554,115 +545,124 @@ svg {
   fill: #f9f7f7 !important;
 }
 
-
 /* Botão de WhatsApp Flutuante no Canto Esquerdo */
 .whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px; /* Pode deixar na mesma altura do outro agora */
-    left: 30px;   /* MUDANÇA: Agora ele fica na esquerda */
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none !important;
-    transition: 0.3s;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px; /* Pode deixar na mesma altura do outro agora */
+  left: 30px; /* MUDANÇA: Agora ele fica na esquerda */
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  transition: 0.3s;
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1);
-    background-color: #128c7e;
-    color: #fff;
+  transform: scale(1.1);
+  background-color: #128c7e;
+  color: #fff;
 }
 
 /* Animação suave para não ser ignorado na esquerda */
 @keyframes attention-shake {
-    0% { transform: scale(1); }
-    80% { transform: scale(1); }
-    85% { transform: scale(1.1) rotate(5deg); }
-    90% { transform: scale(1.1) rotate(-5deg); }
-    95% { transform: scale(1.1) rotate(5deg); }
-    100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  90% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  95% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .whatsapp-float {
-    animation: attention-shake 4s infinite;
+  animation: attention-shake 4s infinite;
 }
 
 /* Custom Contact Page Styles */
 .contact-container {
-    background: #ffffff;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0,0,0,0.05);
+  background: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info-side {
-    background-color: #fff6fb; /* Um creme bem clarinho */
-    padding: 4rem !important;
+  background-color: #fff6fb; /* Um creme bem clarinho */
+  padding: 4rem !important;
 }
 
 .contact-map-side {
-    padding: 0 !important;
-    min-height: 500px;
+  padding: 0 !important;
+  min-height: 500px;
 }
 
 .contact-map-side iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 500px;
-    border: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border: 0;
 }
 
 .contact-card-v2 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .contact-card-v2 i {
-    width: 50px;
-    height: 50px;
-    background: var(--primary);
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    font-size: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 20px;
 }
 
 .contact-card-v2 h6 {
-    margin-bottom: 0;
-    color: #5c3d2e;
-    font-weight: 700;
+  margin-bottom: 0;
+  color: #5c3d2e;
+  font-weight: 700;
 }
 
 .contact-card-v2 p {
-    margin-bottom: 0;
-    font-size: 0.9rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
 /* Arredondando os inputs do formulário */
 .form-rounded {
-    border-radius: 12px !important;
-    border: 1px solid #eee !important;
+  border-radius: 12px !important;
+  border: 1px solid #eee !important;
 }
 
 .form-rounded:focus {
-    border-color: var(--primary) !important;
-    box-shadow: none !important;
+  border-color: var(--primary) !important;
+  box-shadow: none !important;
 }
-
-
 
 .contact-card {
   background: #ffffff;
@@ -670,7 +670,7 @@ svg {
   border-radius: 15px;
   text-align: center;
   transition: 0.3s;
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -683,7 +683,7 @@ svg {
 
 .contact-card i {
   font-size: 24px;
-  color: #634338; 
+  color: #634338;
   margin-bottom: 15px;
 }
 
@@ -720,7 +720,7 @@ svg {
 }
 
 .btn-modern-send {
-  background-color: #d28e65; 
+  background-color: #d28e65;
   color: white;
   border-radius: 30px;
   border: none;

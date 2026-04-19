@@ -25,7 +25,7 @@ const imagens = [
     { src: "img/galeria/bolo4.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo5.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo6.jpg", categoria: "bolo" },
-    { src: "img/galeria/bolo7.jpg", categoria: "bolo" },
+    // { src: "img/galeria/bolo7.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo8.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo9.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo10.jpg", categoria: "bolo" },
