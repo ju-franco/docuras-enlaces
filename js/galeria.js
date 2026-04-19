@@ -25,12 +25,22 @@ const imagens = [
     { src: "img/galeria/bolo4.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo5.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo6.jpg", categoria: "bolo" },
-    // { src: "img/galeria/bolo7.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo7.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo8.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo9.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo10.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo11.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo12.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo13.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo14.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo15.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo16.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo17.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo18.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo19.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo20.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo21.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo22.jpg", categoria: "bolo" },
 ];
 
 // 1. Renderiza as imagens imediatamente
