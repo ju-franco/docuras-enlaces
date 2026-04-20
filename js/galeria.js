@@ -41,6 +41,7 @@ const imagens = [
     { src: "img/galeria/bolo20.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo21.jpg", categoria: "bolo" },
     { src: "img/galeria/bolo22.jpg", categoria: "bolo" },
+    { src: "img/galeria/bolo23.jpg", categoria: "bolo" },
 ];
 
 // 1. Renderiza as imagens imediatamente
