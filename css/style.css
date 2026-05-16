@@ -73,7 +73,22 @@
     overflow: visible !important; /* Permite que o botão seja visto claramente */
 }
 
+/* Força o arredondamento em todos os dispositivos */
+.custom-rounded-container {
+    border-radius: 15px !important;
+    -webkit-border-radius: 15px !important; /* Para navegadores de telemóvel antigos */
+    mask-image: radial-gradient(white, black); /* Truque para iOS não "vazar" a borda */
+}
 
+.custom-img-rounded {
+    border-radius: 15px !important;
+    -webkit-border-radius: 15px !important;
+}
+
+/* Garante que o efeito de hover não quebre a borda */
+.portfolio-item:hover .custom-rounded-container {
+    border-radius: 15px !important;
+}
 
 
 /* Estilização dos Campos de Entrada Corrigida */

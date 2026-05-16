@@ -70,14 +70,14 @@ if (galeriaContainer) {
         const div = document.createElement('div');
         div.className = `col-lg-4 col-md-6 p-0 portfolio-item ${img.categoria}`;
         div.innerHTML = `
-            <div class="position-relative overflow-hidden" style="margin: 10px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                <img class="img-fluid w-100" src="${img.src}" style="height: 300px; object-fit: cover; display: block;">
-                
-                <button class="btn-share-galeria" onclick="compartilharFoto('${img.src}', '${img.categoria}')">
-                    <i class="fa fa-share-alt"></i>
-                </button>
-            </div>
-        `;
+        <div class="position-relative overflow-hidden custom-rounded-container" style="margin: 10px;">
+        <img class="img-fluid w-100 custom-img-rounded" src="${img.src}" style="height: 300px; object-fit: cover; display: block;">
+        
+        <button class="btn-share-galeria" onclick="compartilharFoto('${img.src}', '${img.categoria}')">
+            <i class="fa fa-share-alt"></i>
+        </button>
+    </div>
+`;
         galeriaContainer.appendChild(div);
     });
 }
