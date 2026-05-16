@@ -84,7 +84,7 @@ if (galeriaContainer) {
 
 window.compartilharFoto = async function(caminhoFoto, categoria) {
     const urlSite = window.location.href;
-    const textoBase = `Olha que lindo esse trabalho de ${categoria} da Doçuras Enlaces! 🍰`;
+    const textoBase = `Olha que lindo o que a Doçuras Enlaces fez! 😍🍰`;
 
     // Se for celular (suporta share nativo)
     if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
