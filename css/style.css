@@ -38,6 +38,110 @@
     monospace;
 }
 
+.btn-share-galeria {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff69b4;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.btn-share-galeria:hover {
+    background: #ff69b4;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+
+/* Estilização dos Campos de Entrada Corrigida */
+.custom-input {
+  border-radius: 12px !important;
+  border: 2px solid #eee !important;
+  background-color: #fff !important;
+
+  /* Ajustes para não cortar o texto */
+  padding: 10px 15px !important;
+  height: 45px !important; /* Altura fixa segura para inputs */
+  line-height: 1.2 !important; /* Altura da linha para centralizar o texto */
+  display: flex !important;
+  align-items: center !important;
+
+  font-size: 14px !important;
+  color: #555 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ajuste específico para o Select (setinha) */
+select.custom-input {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Ajuste para a área de texto não ter altura fixa de 45px */
+textarea.custom-input {
+  height: auto !important;
+  min-height: 100px !important;
+  padding: 12px 15px !important;
+}
+
+/* Container do Modal */
+.custom-modal {
+  border-radius: 25px !important;
+  border: none !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Título e Cabeçalho */
+.modal-header .modal-title {
+  color: #d4a373; /* Tom dourado/caramelo para combinar com doces */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Foco nos campos */
+.custom-input:focus {
+  border-color: #ffb7c5 !important; /* Rosa suave */
+  box-shadow: 0 0 0 0.2rem rgba(255, 183, 197, 0.25) !important;
+  outline: none;
+}
+
+/* Labels (os nomes dos campos) */
+.form-group label {
+  margin-bottom: 8px;
+  color: #777;
+  letter-spacing: 0.5px;
+}
+
+/* Botão de Encomendar */
+.btn-encomendar {
+  background: linear-gradient(45deg, #ffb7c5, #ff8fa3) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700 !important;
+  padding: 12px !important;
+  border-radius: 15px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-encomendar:hover {
+  filter: brightness(1.05);
+  transform: translateY(-2px);
+}
+
 /* --- Barra de Rolagem Personalizada --- */
 
 /* 1. Largura da barra */

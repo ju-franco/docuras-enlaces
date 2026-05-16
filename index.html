@@ -3,6 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <title>Doçuras Enlaces</title>
+
+    <meta property="og:title" content="Doçuras Enlaces - Confeitaria Artesanal" />
+<meta property="og:description" content="Bolos festivos, doces gourmet e kits personalizados para tornar seus momentos inesquecíveis." />
+<meta property="og:image" content="https://seusite.com.br/img/logo-compartilhamento.jpg" />
+<meta property="og:url" content="https://seusite.com.br" />
+<meta property="og:type" content="website" />
+
+<meta name="theme-color" content="#ffb7c5" />
+
+
+
+
     <link rel="icon" type="image/png" href="img/icone-pagina.png" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
@@ -307,10 +319,7 @@
                   <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">
                     Eventos Especiais
                   </h5>
-                  <p>
-                    Doces para casamentos, aniversários e
-                    momentos únicos.
-                  </p>
+                  <p>Doces para casamentos, aniversários e momentos únicos.</p>
                 </div>
               </div>
               <div class="service-item">
@@ -599,5 +608,117 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/render.js"></script>
+
+    <!-- Modal para Encomenda de Bolo Festivo -->
+    <div
+      class="modal fade"
+      id="modalBoloFestivo"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg custom-modal">
+          <div class="modal-header border-0 text-center d-block pt-4">
+            <h4 class="modal-title font-weight-bold text-primary">
+              Personalize seu Bolo
+            </h4>
+            <p class="text-muted small">
+              Preencha os detalhes para sua encomenda
+            </p>
+            <button
+              type="button"
+              class="close position-absolute"
+              style="right: 20px; top: 20px"
+              data-dismiss="modal"
+            >
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body px-4 pb-4">
+            <form id="formBoloFestivo">
+              <div class="form-group">
+                <label class="small font-weight-bold">Sabor do Recheio *</label>
+                <select
+                  class="form-control custom-input"
+                  id="recheioBolo"
+                  required
+                >
+                  <option value="">Selecione o sabor</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-6">
+                  <label class="small font-weight-bold">Formato *</label>
+                  <select
+                    class="form-control custom-input"
+                    id="formatoBolo"
+                    required
+                  >
+                    <option value="Redondo">Redondo</option>
+                    <option value="Retangular">Retangular</option>
+                    <option value="Quadrado">Quadrado</option>
+                  </select>
+                </div>
+                <div class="form-group col-6">
+                  <label class="small font-weight-bold">Quilos *</label>
+                  <input
+                    type="number"
+                    class="form-control custom-input"
+                    id="quilosBolo"
+                    min="1"
+                    step="0.5"
+                    placeholder="Ex: 2"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="small font-weight-bold"
+                  >Descrição da Decoração *</label
+                >
+                <textarea
+                  class="form-control custom-input"
+                  id="decoracaoBolo"
+                  rows="2"
+                  placeholder="Cores, tema ou detalhes especiais..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-7">
+                  <label class="small font-weight-bold">Data *</label>
+                  <input
+                    type="date"
+                    class="form-control custom-input"
+                    id="dataBolo"
+                    required
+                  />
+                </div>
+                <div class="form-group col-5">
+                  <label class="small font-weight-bold">Horário *</label>
+                  <input
+                    type="time"
+                    class="form-control custom-input"
+                    id="horarioBolo"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-block rounded-pill py-3 shadow-sm mt-3 font-weight-bold"
+              >
+                <i class="fab fa-whatsapp"></i> Encomendar via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

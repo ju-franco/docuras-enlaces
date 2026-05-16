@@ -9,7 +9,6 @@ const imagens = [
     { src: "img/galeria/casamento6.jpg", categoria: "casamento" },
     { src: "img/galeria/casamento7.jpg", categoria: "casamento" },
 
-
     // CATEGORIA PÁSCOA
     { src: "img/galeria/pascoa1.jpg", categoria: "pascoa" },
     { src: "img/galeria/pascoa2.jpg", categoria: "pascoa" },
@@ -17,6 +16,9 @@ const imagens = [
     { src: "img/galeria/pascoa4.jpg", categoria: "pascoa" },
     { src: "img/galeria/pascoa5.jpg", categoria: "pascoa" },
 
+    // CATEGORIA BOLOS SALGADOS
+    { src: "img/galeria/bolo_salgado1.jpg", categoria: "bolosalgado" },
+    { src: "img/galeria/bolo_salgado2.jpg", categoria: "bolosalgado" }, 
 
     // CATEGORIA BOLOS
     { src: "img/galeria/bolo1.jpg", categoria: "bolo" },
@@ -47,7 +49,7 @@ const imagens = [
 // 1. Renderiza as imagens imediatamente
 const galeriaContainer = document.getElementById("galeria");
 
-if (galeriaContainer) {
+/*if (galeriaContainer) {
     galeriaContainer.innerHTML = "";
     imagens.forEach(img => {
         const div = document.createElement('div');
@@ -60,7 +62,53 @@ if (galeriaContainer) {
         `;
         galeriaContainer.appendChild(div);
     });
+}*/
+
+if (galeriaContainer) {
+    galeriaContainer.innerHTML = "";
+    imagens.forEach((img, index) => {
+        const div = document.createElement('div');
+        div.className = `col-lg-4 col-md-6 p-0 portfolio-item ${img.categoria}`;
+        div.innerHTML = `
+            <div class="position-relative overflow-hidden" style="margin: 10px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <img class="img-fluid w-100" src="${img.src}" style="height: 300px; object-fit: cover; display: block;">
+                
+                <button class="btn-share-galeria" onclick="compartilharFoto('${img.src}', '${img.categoria}')">
+                    <i class="fa fa-share-alt"></i>
+                </button>
+            </div>
+        `;
+        galeriaContainer.appendChild(div);
+    });
 }
+
+window.compartilharFoto = async function(caminhoFoto, categoria) {
+    const urlSite = window.location.href;
+    const textoMensagem = `✨ *Olha que trabalho lindo da Doçuras Enlaces!*%0A%0A` +
+                          `Vi este bolo na categoria *${categoria}* e achei a sua cara! 😍%0A%0A` +
+                          `Veja mais aqui: `;
+
+    // Se estiver no celular, usa o compartilhamento nativo
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: 'Doçuras Enlaces',
+                text: `Olha esse trabalho de ${categoria}! 😍`,
+                url: urlSite
+            });
+        } catch (err) {
+            console.log("Erro ao compartilhar");
+        }
+    } else {
+        // Se estiver no PC, abre direto o WhatsApp Web com o texto formatado
+        const waLink = `https://wa.me/?text=${textoMensagem}${urlSite}`;
+        window.open(waLink, '_blank');
+    }
+};
+
+
+
+
 
 // 2. Inicializa o Isotope APÓS o carregamento das imagens
 $(window).on('load', function () {
