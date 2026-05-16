@@ -38,40 +38,6 @@
     monospace;
 }
 
-/* Botão de Compartilhar na Galeria - Ajuste Fino */
-.btn-share-galeria {
-    position: absolute !important;
-    bottom: 15px !important;
-    right: 15px !important;
-    background: rgba(255, 255, 255, 0.9) !important;
-    border: none !important;
-    border-radius: 50% !important;
-    width: 42px !important;
-    height: 42px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: #ff69b4 !important;
-    cursor: pointer !important;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
-    transition: all 0.3s ease !important;
-    z-index: 999 !important; /* Garante que fique acima de qualquer máscara de hover */
-}
-
-.btn-share-galeria i {
-    font-size: 18px !important;
-}
-
-.btn-share-galeria:hover {
-    background: #ff69b4 !important;
-    color: white !important;
-    transform: scale(1.1) !important;
-}
-
-/* Garante que o container da imagem permita o botão absoluto */
-.portfolio-item .position-relative {
-    overflow: visible !important; /* Permite que o botão seja visto claramente */
-}
 
 /* Força o arredondamento em todos os dispositivos */
 .custom-rounded-container {
