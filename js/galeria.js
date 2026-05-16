@@ -84,25 +84,29 @@ if (galeriaContainer) {
 
 window.compartilharFoto = async function(caminhoFoto, categoria) {
     const urlSite = window.location.href;
-    const textoMensagem = `✨ *Olha que trabalho lindo da Doçuras Enlaces!*%0A%0A` +
-                          `Vi este bolo na categoria *${categoria}* e achei a sua cara! 😍%0A%0A` +
-                          `Veja mais aqui: `;
+    const textoBase = `Olha que lindo esse trabalho de ${categoria} da Doçuras Enlaces! 🍰`;
 
-    // Se estiver no celular, usa o compartilhamento nativo
-    if (navigator.share) {
+    // Se for celular (suporta share nativo)
+    if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         try {
             await navigator.share({
                 title: 'Doçuras Enlaces',
-                text: `Olha esse trabalho de ${categoria}! 😍`,
+                text: textoBase,
                 url: urlSite
             });
         } catch (err) {
-            console.log("Erro ao compartilhar");
+            console.log("Compartilhamento cancelado");
         }
     } else {
-        // Se estiver no PC, abre direto o WhatsApp Web com o texto formatado
-        const waLink = `https://wa.me/?text=${textoMensagem}${urlSite}`;
-        window.open(waLink, '_blank');
+        // Se for Computador, vamos facilitar a vida do usuário
+        const msgZap = encodeURIComponent(`${textoBase} Veja aqui: ${urlSite}`);
+        const zapLink = `https://web.whatsapp.com/send?text=${msgZap}`;
+        
+        // Abre o WhatsApp Web em uma nova aba
+        window.open(zapLink, '_blank');
+        
+        // Opcional: Copia para a área de transferência também
+        navigator.clipboard.writeText(`${textoBase} ${urlSite}`);
     }
 };
 
