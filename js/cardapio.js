@@ -10,6 +10,11 @@ const cardapio = [
         sabores: "Ninho, Ninho com geleia de morango ou pedaços de chocolate, Chocolate trufado, Brigadeiro, Prestígio, Mousse de chocolate branco, Doce de leite com abacaxi ou ameixa, Creme com abacaxi, Dois amores (brigadeiro branco e ao leite)"
     },
     {
+        nome: "Copo da Felicidade",
+        foto: "img/cardapio/copo-felicidade.png",
+        sabores: "Kinder Bueno, Cenoura com brigadeiro trufado, Delícia de uva, Merengue e ninho, Maracujá"
+    },
+    {
         nome: "Alfajor",
         foto: "img/cardapio/alfajor.png",
         sabores: "Doce de Leite tradicional com cobertura de chocolate"
