@@ -13,11 +13,15 @@ const imagens = [
   { src: "img/galeria/pascoa/pascoa2.jpg", categoria: "pascoa" },
   { src: "img/galeria/pascoa/pascoa3.jpg", categoria: "pascoa" },
   { src: "img/galeria/pascoa/pascoa4.jpg", categoria: "pascoa" },
-  { src: "img/galeria/pascoa/pascoa5.jpg", categoria: "pascoa" },
 
   // CATEGORIA FESTIVAL DE FATIAS
   { src: "img/galeria/festival/.jpg", categoria: "festival" },
 
+  // CATEGORIA COPO DA FELICIDADE
+  { src: "img/galeria/felicidade/felicidade1.jpg", categoria: "felicidade" },
+  { src: "img/galeria/felicidade/felicidade2.jpg", categoria: "felicidade" },
+  { src: "img/galeria/felicidade/felicidade3.jpg", categoria: "felicidade" },
+  { src: "img/galeria/felicidade/felicidade4.jpg", categoria: "felicidade" },
 
   // CATEGORIA BOLOS SALGADOS
   { src: "img/galeria/bolosalgado/bolo_salgado1.jpg", categoria: "bolosalgado" },
@@ -28,11 +32,12 @@ const imagens = [
   { src: "img/galeria/bolo/bolo2.jpg", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo3.jpg", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo4.jpg", categoria: "bolo" },
-  { src: "img/galeria/bolo/bolo6.jpg", categoria: "bolo" },
-  { src: "img/galeria/bolo/bolo7.jpg", categoria: "bolo" },
+  { src: "img/galeria/bolo/bolo5.jpg", categoria: "bolo" },
+  { src: "img/galeria/bolo/bolo6.JPG", categoria: "bolo" },
+  { src: "img/galeria/bolo/bolo7.JPG", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo8.jpg", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo9.jpg", categoria: "bolo" },
-  { src: "img/galeria/bolo/bolo10.jpg", categoria: "bolo" },
+  { src: "img/galeria/bolo/bolo10.JPG", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo11.jpg", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo12.jpg", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo13.jpg", categoria: "bolo" },
@@ -43,9 +48,7 @@ const imagens = [
   { src: "img/galeria/bolo/bolo18.jpg", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo19.jpg", categoria: "bolo" },
   { src: "img/galeria/bolo/bolo20.jpg", categoria: "bolo" },
-  { src: "img/galeria/bolo/bolo21.jpg", categoria: "bolo" },
-  { src: "img/galeria/bolo/bolo22.jpg", categoria: "bolo" },
-  { src: "img/galeria/bolo/bolo23.jpg", categoria: "bolo" },
+  { src: "img/galeria/bolo/bolo21.JPG", categoria: "bolo" },
 ];
 
 // 1. Renderiza as imagens imediatamente
