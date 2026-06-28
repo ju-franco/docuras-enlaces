@@ -48,5 +48,10 @@ const cardapio = [
         nome: "Cookie",
         foto: "img/cardapio/cookie.png",
         sabores: "Tradicional, Chocolate, Red velvet com recheio de brigadeiro de cream cheese"
+    },
+    {
+        nome: "Pudim",
+        foto: "img/cardapio/pudim.png",
+        sabores: "Tradicional"
     }
 ];

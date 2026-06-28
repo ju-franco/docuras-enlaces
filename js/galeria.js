@@ -15,13 +15,20 @@ const imagens = [
   { src: "img/galeria/pascoa/pascoa4.jpg", categoria: "pascoa" },
 
   // CATEGORIA FESTIVAL DE FATIAS
-  { src: "img/galeria/festival/.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival1.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival2.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival3.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival4.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival5.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival6.jpg", categoria: "festival" },
 
   // CATEGORIA COPO DA FELICIDADE
   { src: "img/galeria/felicidade/felicidade1.jpg", categoria: "felicidade" },
   { src: "img/galeria/felicidade/felicidade2.jpg", categoria: "felicidade" },
   { src: "img/galeria/felicidade/felicidade3.jpg", categoria: "felicidade" },
   { src: "img/galeria/felicidade/felicidade4.jpg", categoria: "felicidade" },
+  { src: "img/galeria/felicidade/felicidade5.jpg", categoria: "felicidade" },
+  { src: "img/galeria/felicidade/felicidade6.jpg", categoria: "felicidade" },
 
   // CATEGORIA BOLOS SALGADOS
   { src: "img/galeria/bolosalgado/bolo_salgado1.jpg", categoria: "bolosalgado" },
