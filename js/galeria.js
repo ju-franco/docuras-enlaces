@@ -17,10 +17,11 @@ const imagens = [
   // CATEGORIA FESTIVAL DE FATIAS
   { src: "img/galeria/festival/bolofestival1.jpg", categoria: "festival" },
   { src: "img/galeria/festival/bolofestival2.jpg", categoria: "festival" },
-  { src: "img/galeria/festival/bolofestival3.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival3.jpeg", categoria: "festival" },
   { src: "img/galeria/festival/bolofestival4.jpg", categoria: "festival" },
   { src: "img/galeria/festival/bolofestival5.jpg", categoria: "festival" },
   { src: "img/galeria/festival/bolofestival6.jpg", categoria: "festival" },
+  { src: "img/galeria/festival/bolofestival7.jpg", categoria: "festival" },
 
   // CATEGORIA COPO DA FELICIDADE
   { src: "img/galeria/felicidade/felicidade1.jpg", categoria: "felicidade" },
