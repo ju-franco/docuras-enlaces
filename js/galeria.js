@@ -1,5 +1,4 @@
 const imagens = [
-
   { src: "img/galeria/felicidade/felicidade1.jpg", categoria: "felicidade" },
   { src: "img/galeria/felicidade/felicidade2.jpg", categoria: "felicidade" },
   { src: "img/galeria/felicidade/felicidade3.jpg", categoria: "felicidade" },
